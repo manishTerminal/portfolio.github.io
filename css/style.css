@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;800;900&display=swap");
+@import "utility.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	height: 100vh;
+}
+header {
+	position: relative;
+	position: sticky;
+	top: 0px;
+	background-color: white;
+}
+nav {
+	width: 100vw;
+}
+nav div img {
+	width: 70px;
+}
+nav div ul {
+	text-decoration: none;
+	list-style: none;
+	text-transform: uppercase;
+}
+nav div ul li a {
+	text-decoration: none;
+	color: black;
+	letter-spacing: 0.1rem;
+}
+nav div ul li a:hover {
+	border: 1px solid black;
+	padding: 0.6rem 1.2rem;
+}
+nav div button {
+	background: none;
+	border: 1px solid black;
+	outline: none;
+	cursor: pointer;
+	padding: 0.8rem 2rem;
+	text-transform: uppercase;
+}
+nav div button:hover {
+	background: #120e43;
+	color: white;
+}
+
+/* HERO SECTION  */
+
+.about {
+	padding-left: 16px;
+}
+.about h4 {
+	font-weight: 300;
+}
+.profile-pic img {
+	width: 100%;
+	height: 100%;
+}
+.hero h1 {
+	font-size: 6rem;
+}
+.hero {
+	height: 100vh;
+	background-color: #120e43;
+	color: white;
+}
+
+/* SKLL SECTION  */
+
+.skill-exp {
+	/* height: 100vh; */
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.skill-exp .left h2 {
+	padding: 32px 0px;
+	font-size: 5rem;
+	font-weight: 900;
+}
+.skill-exp .left h3 {
+	padding: 32px 0px;
+	font-size: 2rem;
+	font-weight: 800;
+}
+.skill-exp .left h4 {
+	font-weight: 400;
+}
+.skill-icon {
+	margin: 24px;
+}
+.skill-exp .right h2 {
+	padding: 32px 0px;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.skill-exp .right h3 {
+	padding: 32px 0px;
+	font-size: 1.2rem;
+	font-weight: 800;
+}
+.skill-exp .right p {
+	margin-bottom: 32px;
+}
+.skill-profile {
+	/* border: 1px solid black; */
+	position: relative;
+}
+.skill-profile img {
+	width: 300px;
+	border-radius: 50%;
+}
+
+/* PROJECT SECTION  */
+
+.project {
+	/* height: 100vh; */
+	/* margin: 16px; */
+	background: #f1f0f3;
+	/* color: white; */
+	padding-bottom: 128px;
+}
+.project h2 {
+	font-size: 5rem;
+	margin-left: 16px;
+	margin-top: 100px;
+	margin-bottom: 128px;
+}
+.project img {
+	width: 500px;
+	height: 500px;
+}
+.p-list {
+	border: 1px solid black;
+	margin: 16px;
+	box-shadow: 0px 0px 10px black;
+}
+.project-outer .p-list h3 {
+	margin-top: 16px;
+	margin-left: 16px;
+	font-weight: 400;
+}
+.project-outer .p-list p {
+	margin-top: 8px;
+	margin-left: 16px;
+	font-weight: 200;
+}
+.project-outer .p-list a {
+	margin-top: 8px;
+	margin-left: 16px;
+}
+
+/* Contact */
+
+.contact-in {
+	margin: 64px;
+}
+.contact-in p {
+	margin-top: 16px;
+}
+.in {
+	margin: 32px 32px;
+}
+.con-head {
+	font-size: 5rem;
+	margin-left: 16px;
+	margin-top: 100px;
+}
+.in input {
+	width: 400px;
+	height: 40px;
+	border: 1px solid rgb(39, 2, 250);
+	outline: none;
+	padding: 16px;
+}
+.in textarea {
+	/* width: 400px;
+    height: 40px; */
+	border: 1px solid rgb(39, 2, 250);
+	outline: none;
+	padding: 16px;
+}
+.in button {
+	background: none;
+	border: 1px solid black;
+	outline: none;
+	cursor: pointer;
+	padding: 0.8rem 2rem;
+	text-transform: uppercase;
+}
+.in button:hover {
+	background: #120e43;
+	color: white;
+}
+.footer {
+	background: black;
+	color: white;
+	height: 300px;
+	font-size: 2rem;
+	font-weight: 400;
+}
+@media (max-width: 1024px) {
+	.skill-exp .left h2 {
+		font-size: 3.6rem;
+	}
+}
+@media (max-width: 768px) {
+	#skill {
+		flex-direction: column;
+	}
+	.hero {
+		flex-direction: column;
+		height: 500px;
+	}
+	.profile-pic img {
+		display: none;
+	}
+	nav .right {
+		display: none;
+	}
+	nav button {
+		display: none;
+	}
+}
+
+@media (max-width: 468px) {
+	nav .right {
+		display: none;
+	}
+	nav button {
+		display: none;
+	}
+	.hero h1 {
+		font-size: 4.8rem;
+	}
+	.project img {
+		width: 400px;
+		box-shadow: 0 0 10px blue;
+	}
+	.footer p {
+		text-align: center;
+	}
+}
+@media (max-width: 395px) {
+	nav .right {
+		display: none;
+	}
+	nav button {
+		display: none;
+	}
+	.hero h1 {
+		font-size: 4.2rem;
+	}
+	.project img {
+		width: 350px;
+		box-shadow: 0 0 10px blue;
+	}
+	.footer p {
+		text-align: center;
+	}
+	.in input {
+		width: 300px;
+		height: 40px;
+		border: 1px solid rgb(39, 2, 250);
+		outline: none;
+		padding: 8px;
+	}
+}
